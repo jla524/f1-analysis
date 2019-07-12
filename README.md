@@ -16,6 +16,16 @@ F1 analysis can be run from an iteractive Python notebook. I recommend installin
 and using Jupyter Notebook. To start Jupyter, use the command `jupyter-notebook`.
 
 
+## Acknowledgements
+
+The [Formula 1 Race Data](https://www.kaggle.com/cjgdev/formula-1-race-data-19502017) 
+was provided by Chris G and Kaggle
+
+
+I am following this [SQL style guide](https://www.sqlstyle.guide)
+by Simon Holywell
+
+
 ## Installing Python Libraries
 
 1.  Install with [Pip](https://pip.pypa.io/en/stable/)
@@ -27,14 +37,14 @@ and using Jupyter Notebook. To start Jupyter, use the command `jupyter-notebook`
     `conda install -c conda-forge pandas matplotlib ipython-sql`
 
 
-## Acknowledgements
+## Jupyter notebook not rendering
+Some users have reported that 
+[Jupyter notebook is not rendering on GitHub](https://github.com/jupyter/notebook/issues/3035).
 
-The [Formula 1 Race Data](https://www.kaggle.com/cjgdev/formula-1-race-data-19502017) 
-was provided by Chris G and Kaggle
+If the notebook is not rendering on GitHub, please visit 
+[nbviewer](https://nbviewer.jupyter.org/github/jla524/f1-analysis/blob/master/formula-1-data-analysis.ipynb)
+to render the notebook.
 
-
-I am following this [SQL style guide](https://www.sqlstyle.guide)
-by Simon Holywell
 
 
 ## Resources 
