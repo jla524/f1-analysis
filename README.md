@@ -8,7 +8,7 @@ Fédération Internationale de l'Automobile (FIA) and owned by the Formula One G
 World Championship has been one of the premier forms of racing around the world since its inaugaural 
 season in 1950.
 
-The dataset contains data from 1950 all the way through the 2017 season, and consists of tables describing 
+The dataset contains data from 1950 all the way through the 2018 season, and consists of tables describing 
 constructors, race drivers, lap times, pit stops and more.
 
 F1 analysis can be run from an iteractive Python notebook. I recommend installing the 
@@ -18,8 +18,7 @@ and using Jupyter Notebook. To start Jupyter, use the command `jupyter-notebook`
 
 ## Acknowledgements
 
-The [Formula 1 Race Data](https://www.kaggle.com/cjgdev/formula-1-race-data-19502017) 
-was provided by Chris G and Kaggle
+The dataset is downloaded from http://ergast.com/mrd/
 
 
 I am following this [SQL style guide](https://www.sqlstyle.guide)
@@ -55,7 +54,7 @@ to render the notebook.
 
 [SQL magic for IPython](https://github.com/catherinedevlin/ipython-sql/blob/master/README.rst) by Catherine Devlin
 
-
+[Formula 1 Race Data](https://www.kaggle.com/cjgdev/formula-1-race-data-19502017) by Chris G
 
 
 
