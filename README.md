@@ -13,7 +13,7 @@ constructors, race drivers, lap times, pit stops and more.
 
 F1 analysis can be run from an iteractive Python notebook. I recommend installing the 
 [Anaconda distribution](https://www.anaconda.com/distribution/#download-section)
-and using Jupyter Notebook. To start Jupyter, use the command `jupyter-notebook`.
+and using Jupyter Notebook.
 
 
 ## Acknowledgements
@@ -34,6 +34,20 @@ by Simon Holywell
 2.  Install with [Anaconda](https://www.anaconda.com/distribution/)
 
     `conda install -c conda-forge pandas matplotlib ipython-sql`
+    
+
+## Instructions to Run
+1.  Clone this repository
+
+2.  Download the [dataset](http://ergast.com/mrd/) and move it into the f1-analysis folder
+
+3.  Install the required libraries and execute `python3 clean_data.py`
+
+    Default folder names are input='f1db_csv' and output='clean_f1db'
+    
+    Users can specify the names like this `python3 clean_data.py input output`
+    
+4.  Start Jupyter Notebook using the command `jupyter-notebook`
 
 
 ## Jupyter notebook not rendering
