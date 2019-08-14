@@ -20,14 +20,8 @@ and using Jupyter Notebook.
 
 The dataset is downloaded from http://ergast.com/mrd/
 
-
 I am following this [SQL style guide](https://www.sqlstyle.guide)
 by Simon Holywell
-
-
-## Installing Python Libraries
-
-
     
 
 ## Instructions to Run
