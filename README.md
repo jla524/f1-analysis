@@ -27,25 +27,21 @@ by Simon Holywell
 
 ## Installing Python Libraries
 
-1.  Install with [Pip](https://pip.pypa.io/en/stable/)
 
-    `pip install -U pandas matplotlib ipython-sql`
-    
-2.  Install with [Anaconda](https://www.anaconda.com/distribution/)
-
-    `conda install -c conda-forge pandas matplotlib ipython-sql`
     
 
 ## Instructions to Run
 1.  Clone this repository
 
-2.  Download the [dataset](http://ergast.com/mrd/) and move it into the f1-analysis folder
+2.  Download the [dataset](http://ergast.com/mrd/) and move it into your local repository
 
-3.  Install the required libraries and execute `python3 clean_data.py`
+3.  Install the required Python libraries 
 
-    Default folder names are input='f1db_csv' and output='clean_f1db'
+    with [Pip](https://pip.pypa.io/en/stable/):
+    `pip install -U pandas matplotlib ipython-sql`
     
-    Users can specify the names like this `python3 clean_data.py input output`
+    with [Anaconda](https://www.anaconda.com/distribution/):
+    `conda install -c conda-forge pandas matplotlib ipython-sql`
     
 4.  Start Jupyter Notebook using the command `jupyter-notebook`
 
