@@ -8,12 +8,12 @@ Fédération Internationale de l'Automobile (FIA) and owned by the Formula One G
 World Championship has been one of the premier forms of racing around the world since its inaugaural 
 season in 1950.
 
-The dataset contains data from 1950 all the way through the 2018 season, and consists of tables describing 
+The dataset contains data from 1950 all the way through the 2019 season, and consists of tables describing 
 constructors, race drivers, lap times, pit stops and more.
 
-F1 analysis can be run from an iteractive Python notebook. I recommend installing the 
-[Anaconda distribution](https://www.anaconda.com/distribution/#download-section)
-and using Jupyter Notebook.
+F1 analysis is created using an iteractive Python notebook. Therefore,
+[Anaconda](https://www.anaconda.com/distribution/#download-section) is required for running and modifying 
+the content of the notebook.
 
 
 ## Acknowledgements
@@ -24,20 +24,44 @@ I am following this [SQL style guide](https://www.sqlstyle.guide)
 by Simon Holywell
     
 
-## Instructions to Run
+## Instructions to run the notebook
 1.  Clone this repository
 
 2.  Download the [dataset](http://ergast.com/mrd/) and move it into your local repository
 
-3.  Install the required Python libraries 
+3.  Create and activate a virtual environment (optional)
 
     with [Pip](https://pip.pypa.io/en/stable/):
-    `pip install -U pandas matplotlib ipython-sql`
+    
+    `python -m venv env`
+    
+    `source env/bin/activate`
     
     with [Anaconda](https://www.anaconda.com/distribution/):
-    `conda install -c conda-forge pandas matplotlib ipython-sql`
     
-4.  Start Jupyter Notebook using the command `jupyter-notebook`
+    `conda create -n f1_analysis_env python=3.7`
+    
+    `conda activate f1_analysis_env`
+
+4.  Install the required Python libraries 
+
+    with [Pip](https://pip.pypa.io/en/stable/):
+    `pip install -r requirements.txt`
+    
+    with [Anaconda](https://www.anaconda.com/distribution/):
+    `conda install -r requirements.txt`
+    
+5.  Install an ipython kernel for the virtual environment (optional)
+
+    `pip install ipykernel`
+    
+    `ipython kernel install —user —name=f1_analysis_env`
+    
+    You may need to create a new notebook with this environment and copy the content from formula-1-data-analysis.ipynb.
+    
+6.  Start Jupyter Notebook using the command `jupyter-notebook`
+
+    In the new browser tab, click on formula-1-data-analysis.ipynb, the fast forward button, and "Restart and Run All Cells".
 
 
 ## Jupyter notebook not rendering
@@ -59,11 +83,3 @@ to render the notebook.
 [SQL magic for IPython](https://github.com/catherinedevlin/ipython-sql/blob/master/README.rst) by Catherine Devlin
 
 [Formula 1 Race Data](https://www.kaggle.com/cjgdev/formula-1-race-data-19502017) by Chris G
-
-
-
-
-
-
-
-
