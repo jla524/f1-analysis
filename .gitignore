@@ -140,5 +140,3 @@ cython_debug/
 # For this project only
 f1db_csv/
 clean_f1db/
-columns.txt
-tables.txt
