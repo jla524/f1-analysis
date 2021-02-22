@@ -27,7 +27,7 @@ by Simon Holywell
 ## Instructions to run the notebook
 1.  Clone this repository
 
-2.  Download the [dataset](http://ergast.com/mrd/) and move it into your local repository
+2.  Download the [database image](http://ergast.com/mrd/db/) and move it into your local repository
 
 3.  Create and activate a virtual environment (optional)
 
