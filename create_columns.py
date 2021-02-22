@@ -1,12 +1,12 @@
 import pickle
 
 tables = ['circuits', 'constructor_results', 'constructor_standings', 'constructors', 'driver_standings', \
-		  'drivers', 'lap_times', 'pit_stops', 'qualifying', 'races', 'results', 'seasons', 'status']
+  'drivers', 'lap_times', 'pit_stops', 'qualifying', 'races', 'results', 'seasons', 'status']
 
 circuits_n = ['circuitId', 'circuitRef', 'name', 'location', 'country', 'lat', 'lng', 'alt', 'url']
 constr_re_n = ['constructorResultsId', 'raceId', 'constructorId', 'points', 'status']
 constr_stand_n = ['constructorStandingsId', 'raceId', 'constructorId', \
-				  'points', 'position', 'positionText', 'wins']
+  'points', 'position', 'positionText', 'wins']
 constr_n = ['constructorId', 'constructorRef', 'name', 'nationality', 'url']
 driver_stand_n = ['driverStandingsId', 'raceId', 'driverId', 'points', 'position', 'positionText', 'wins']
 drivers_n = ['driverId', 'driverRef', 'number', 'code', 'forename', 'surname', 'dob', 'nationality', 'url']
