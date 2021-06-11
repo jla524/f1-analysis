@@ -11,9 +11,8 @@ season in 1950.
 The dataset contains data from 1950 all the way through the 2019 season, and consists of tables describing 
 constructors, race drivers, lap times, pit stops and more.
 
-F1 analysis is created using an iteractive Python notebook. Therefore,
-[Anaconda](https://www.anaconda.com/distribution/#download-section) is required for running and modifying 
-the content of the notebook.
+F1 analysis is created using an iteractive Python notebook, so Jupyter Notebook is required for running 
+and modifying the notebook.
 
 
 ## Acknowledgements
@@ -33,9 +32,9 @@ by Simon Holywell
 
     with [Pip](https://pip.pypa.io/en/stable/):
     
-    `python -m venv env`
+    `python -m venv f1_analysis_env`
     
-    `source env/bin/activate`
+    `source f1_analysis_env/bin/activate`
     
     with [Anaconda](https://www.anaconda.com/distribution/):
     
@@ -55,7 +54,7 @@ by Simon Holywell
 
     `pip install ipykernel`
     
-    `ipython kernel install —-user —-name=f1_analysis_env`
+    `python -m ipykernel install --user --name=f1_analysis_env`
     
     You may need to create a new notebook with this environment and copy the content from formula-1-data-analysis.ipynb.
     
