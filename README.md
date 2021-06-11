@@ -32,7 +32,7 @@ by Simon Holywell
 
     with [Pip](https://pip.pypa.io/en/stable/):
     
-    `python -m venv f1_analysis_env`
+    `python3 -m venv f1_analysis_env`
     
     `source f1_analysis_env/bin/activate`
     
