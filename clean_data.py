@@ -8,7 +8,8 @@ from os.path import isdir, join
 INPUT_DIR = 'f1db_csv'
 OUTPUT_DIR = 'clean_f1db'
 
-if __name__ == '__main__':
+
+def clean_data():
     # Create output directory if it does not exist
     if not isdir(OUTPUT_DIR):
         makedirs(OUTPUT_DIR)
@@ -21,3 +22,6 @@ if __name__ == '__main__':
 
     print(f"Cleaned data is now stored in {OUTPUT_DIR}/")
 
+
+if __name__ == '__main__':
+    clean_data()
