@@ -54,7 +54,7 @@ by Simon Holywell
 
     `pip install ipykernel`
     
-    `python -m ipykernel install --user --name=f1_analysis_env`
+    `python3 -m ipykernel install --user --name=f1_analysis_env`
     
     You may need to create a new notebook with this environment and copy the content from formula-1-data-analysis.ipynb.
     
