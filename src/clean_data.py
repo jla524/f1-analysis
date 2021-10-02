@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-from numpy import NaN
-from pandas import read_csv
 from pathlib import Path
 
+from numpy import NaN
+from pandas import read_csv
 
-def clean_data(input_path=Path('f1db_csv'), output_path=Path('clean_f1db')):
+
+def clean_data(input_path: Path, output_path: Path) -> None:
     output_path.mkdir(exist_ok=True)
     # For each file in input_dir, replace \N with NaN and save
     for file in input_path.iterdir():
