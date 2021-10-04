@@ -29,7 +29,17 @@ I am following this [SQL style guide][1] by Simon Holywell
 ## Instructions to run the notebook
 1.  Clone this repository
 
+    `git clone git@github.com:jla524/f1-analysis.git`
+    
+    `cd f1-analysis`
+
 2.  Download the [database image][2] and move it into your local repository
+
+    `wget http://ergast.com/downloads/f1db_csv.zip`
+
+    `mkdir data`
+
+    `unzip -d data/f1db_csv f1db_csv.zip`
 
 3.  Setup a virtual environment and install the required dependencies 
 
