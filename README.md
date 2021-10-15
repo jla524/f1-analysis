@@ -66,6 +66,15 @@ If the notebook is not rendering on GitHub, please visit [nbviewer][4] to
 render the notebook
 
 
+## TODO
+
+- Update instructions to follow the new project structure
+
+- Automate or simplify the process of getting the raw data (bash script)
+
+- Add a reference to show how to set up poetry
+
+
 
 ## Resources 
 
