@@ -35,15 +35,13 @@ I am following this [SQL style guide][1] by Simon Holywell
 
 2.  Download the [database image][2] and move it into your local repository
 
-    `wget http://ergast.com/downloads/f1db_csv.zip`
+    `wget http://ergast.com/downloads/f1db_csv.zip && mkdir -p data/raw`
 
-    `mkdir data`
+    `unzip -d data/raw f1db_csv.zip && rm f1db_csv.zip`
 
-    `unzip -d data/f1db_csv f1db_csv.zip`
+3.  Install the dependencies in a virtual environment and make final data set
 
-3.  Setup a virtual environment and install the required dependencies 
-
-    `poetry install`
+    `make data`
 
 4.  Create a sub-shell within the virtual environment
 
@@ -53,7 +51,7 @@ I am following this [SQL style guide][1] by Simon Holywell
 
     `jupyter-notebook`
 
-6.  In the new browser tab, select `src` and `formula-1-data-analysis.ipynb`
+6.  In the new browser tab, select `notebooks` and `formula-1-data-analysis.ipynb`
 
 7.  Click on the fast forward button, and then "Restart and Run All Cells"
 
@@ -67,10 +65,6 @@ render the notebook
 
 
 ## TODO
-
-- Update instructions to follow the new project structure
-
-- Automate or simplify the process of getting the raw data (bash script)
 
 - Add a reference to show how to set up poetry
 
