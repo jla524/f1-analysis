@@ -8,7 +8,6 @@ PYTHON_INTERPRETER = python3
 # COMMANDS                                                                      #
 #################################################################################
 
-
 ## Install Python Dependencies
 requirements:
 		poetry install
