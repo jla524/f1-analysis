@@ -68,6 +68,7 @@ render the notebook
 
 - Add a reference to show how to set up poetry
 
+- Pit stop data is inaccurate and/or incomplete
 
 
 ## Resources 
