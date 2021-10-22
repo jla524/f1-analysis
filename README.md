@@ -56,14 +56,6 @@ I am following this [SQL style guide][1] by Simon Holywell
 7.  Click on the fast forward button, and then "Restart and Run All Cells"
 
 
-## Jupyter notebook not rendering
-
-Some users have reported that [Jupyter notebook is not rendering on GitHub][4]
-
-If the notebook is not rendering on GitHub, please visit [nbviewer][5] to
-render the notebook
-
-
 ## TODO
 
 - Pit stop data is inaccurate and/or incomplete
@@ -71,22 +63,20 @@ render the notebook
 
 ## Resources 
 
-[Formula 1 Race Data][6] by Chris G
+[Formula 1 Race Data][4] by Chris G
 
-[Pandas][7] data analysis library
+[Pandas][5] data analysis library
 
-[SQL magic for IPython][8] by Catherine Devlin
+[SQL magic for IPython][6] by Catherine Devlin
 
-[Matplotlib][9] 2D plotting library
+[Matplotlib][7] 2D plotting library
 
 
 
 [1]: https://www.sqlstyle.guide
 [2]: http://ergast.com/mrd/db/
 [3]: https://python-poetry.org/docs/#installation
-[4]: https://github.com/jupyter/notebook/issues/3035
-[5]: https://nbviewer.jupyter.org/github/jla524/f1-analysis/blob/master/formula-1-data-analysis.ipynb
-[6]: https://www.kaggle.com/cjgdev/formula-1-race-data-19502017
-[7]: https://pandas.pydata.org
-[8]: https://github.com/catherinedevlin/ipython-sql/blob/master/README.rst
-[9]: https://matplotlib.org
+[4]: https://www.kaggle.com/cjgdev/formula-1-race-data-19502017
+[5]: https://pandas.pydata.org
+[6]: https://github.com/catherinedevlin/ipython-sql/blob/master/README.rst
+[7]: https://matplotlib.org
