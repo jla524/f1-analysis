@@ -1,34 +1,50 @@
-# -*- coding: utf-8 -*-
-import click
-import logging
+"""
+Define function to get dataset
+"""
+from io import BytesIO
+from zipfile import ZipFile
 from pathlib import Path
 
+import click
 from numpy import NaN
 from pandas import read_csv
+from urllib.request import urlopen
+
+
+def download_data(data_dir):
+    """
+    @description: download the F1 dataset if it is not in the data/ directory
+    """
+    if data_dir.is_dir():
+        return
+
+    url = 'http://ergast.com/downloads/f1db_csv.zip'
+
+    with urlopen(url) as response:
+        with ZipFile(BytesIO(response.read())) as zip_file:
+            zip_file.extractall(data_dir)
 
 
 @click.command()
-@click.argument('input_filepath', type=click.Path(exists=True))
-@click.argument('output_filepath', type=click.Path())
-def main(input_filepath: str, output_filepath: str):
+@click.argument('input_dir', type=click.Path())
+@click.argument('output_dir', type=click.Path())
+def main(input_dir, output_dir):
     """
-    description: runs data processing scripts to turn raw data from (../raw)
-      into cleaned data ready to be analyzed (saved in ../processed).
+    description: runs data processing scripts to turn raw data from (data/raw)
+      into cleaned data ready to be analyzed (saved in data/processed).
     """
-    logger = logging.getLogger(__name__)
-    logger.info("Making final data set from raw data")
-    input_filepath = Path(input_filepath)
-    output_filepath = Path(output_filepath)
+    input_path = Path(input_dir)
+    output_path = Path(output_dir)
+
+    download_data(input_path)
+    output_path.mkdir(exist_ok=True)
 
     # For each file in input_filepath, replace \N with NaN and save
-    for _file in input_filepath.iterdir():
-        df = read_csv(_file)
-        df.replace(r'\N', NaN, inplace=True)
-        df.to_csv(output_filepath / _file.name, index=False)
-    logger.info("Done")
+    for file in input_path.iterdir():
+        data = read_csv(file)
+        data.replace(r'\N', NaN, inplace=True)
+        data.to_csv(output_path / file.name, index=False)
 
 
 if __name__ == '__main__':
-    log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    logging.basicConfig(level=logging.INFO, format=log_fmt)
     main()
