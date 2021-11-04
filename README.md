@@ -33,13 +33,11 @@ I am following this [SQL style guide][1] by Simon Holywell
     
     `cd f1-analysis`
 
-2.  Download the [database image][2] and move it into your local repository
+2.  Install the required dependencies
 
-    `wget http://ergast.com/downloads/f1db_csv.zip && mkdir -p data/raw`
+    `poetry install`
 
-    `unzip -d data/raw f1db_csv.zip && rm f1db_csv.zip`
-
-3.  Install the dependencies in a virtual environment and make final data set
+3.  Download and make the dataset
 
     `make data`
 
