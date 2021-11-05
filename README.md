@@ -54,11 +54,6 @@ I am following this [SQL style guide][1] by Simon Holywell
 7.  Click on the fast forward button, and then "Restart and Run All Cells"
 
 
-## TODO
-
-- Pit stop data is inaccurate and/or incomplete
-
-
 ## Resources 
 
 [Formula 1 Race Data][4] by Chris G
