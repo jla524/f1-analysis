@@ -33,7 +33,7 @@ I am following this [SQL style guide][1] by Simon Holywell
     
     `cd f1-analysis`
 
-2.  Install the required dependencies
+2.  Install the required dependencies with [poetry][3]
 
     `poetry install`
 
@@ -41,7 +41,7 @@ I am following this [SQL style guide][1] by Simon Holywell
 
     `make data`
 
-4.  Use [poetry][3] to create a sub-shell within the virtual environment
+4.  Create a sub-shell within the virtual environment
 
     `poetry shell`
     
