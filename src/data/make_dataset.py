@@ -11,9 +11,11 @@ from pandas import read_csv
 from urllib.request import urlopen
 
 
-def download_data(data_dir):
+def download_data(data_dir: Path) -> None:
     """
     @description: download the F1 dataset if it is not in the data/ directory
+    @param data_dir: path to store the dataset
+    @returns: None
     """
     if data_dir.is_dir():
         return
@@ -28,10 +30,13 @@ def download_data(data_dir):
 @click.command()
 @click.argument('input_dir', type=click.Path())
 @click.argument('output_dir', type=click.Path())
-def main(input_dir, output_dir):
+def main(input_dir: str, output_dir: str) -> None:
     """
-    description: runs data processing scripts to turn raw data from (data/raw)
+    @description: runs data processing scripts to turn raw data from (data/raw)
       into cleaned data ready to be analyzed (saved in data/processed).
+    @param input_dir: path where the raw data is stored
+    @param output_dir: path to store the cleaned dataset
+    @returns: None
     """
     input_path = Path(input_dir)
     output_path = Path(output_dir)
