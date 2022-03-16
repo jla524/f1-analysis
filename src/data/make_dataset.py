@@ -17,9 +17,6 @@ def download_data(data_dir: Path) -> None:
     @param data_dir: path to store the dataset
     @returns: None
     """
-    if data_dir.is_dir():
-        return
-
     url = 'http://ergast.com/downloads/f1db_csv.zip'
 
     with urlopen(url) as response:
